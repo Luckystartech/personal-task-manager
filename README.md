@@ -595,11 +595,13 @@ open coverage/html/index.html
 ## 📸 Screenshots
 
 ### Home Screen
-![Home Screen](screenshots/dark-home_screen.png)
-![Home Screen](screenshots/light-home-screen.png)
 <div align="center">
   <img src="screenshots/light-home-screen.png" width="250" />
   <img src="screenshots/dark-home_screen.png" width="250" />
+  <img src="screenshots/create-task.png" width="250" />
+  <img src="screenshots/filter.png" width="250" />
+  <img src="screenshots/search.png" width="250" />
+  <img src="screenshots/task-details.png" width="250" />
 </div>
 
 ## 🔮 Future Enhancements
@@ -632,9 +634,6 @@ open coverage/html/index.html
 - Testing & refinement: 1 hour
 - Documentation (README): 1 hour
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
 
