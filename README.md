@@ -491,7 +491,7 @@ void _onFormChanged() {
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/personal-task-manager.git
+git clone https://github.com/Luckystartech/personal-task-manager.git
 cd personal-task-manager
 ```
 
@@ -594,7 +594,13 @@ open coverage/html/index.html
 
 ## 📸 Screenshots
 
-(Add screenshots of your app here)
+### Home Screen
+![Home Screen](screenshots/dark-home_screen.png)
+![Home Screen](screenshots/light-home-screen.png)
+<div align="center">
+  <img src="screenshots/light-home-screen.png" width="250" />
+  <img src="screenshots/dark-home_screen.png" width="250" />
+</div>
 
 ## 🔮 Future Enhancements
 
@@ -634,7 +640,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Your Name**
 - GitHub: [@Luckystartech](https://github.com/Luckystartech)
-- Email: your.email@example.com
+- Email: luckyekpebe123@gmail.com
 - LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/lucky-ekpebe-6317b1383/)
 
 ## 🙏 Acknowledgments
