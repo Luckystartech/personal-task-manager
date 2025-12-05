@@ -623,7 +623,7 @@ dev_dependencies:
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Lucky Ekpebe**
 - GitHub: [@Luckystartech](https://github.com/Luckystartech)
 - Email: luckyekpebe123@gmail.com
 - LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/lucky-ekpebe-6317b1383/)
