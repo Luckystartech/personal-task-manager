@@ -578,20 +578,6 @@ dev_dependencies:
 - Size: ~15-20 MB
 - Architecture: ARM, ARM64, x86_64
 
-## 🧪 Testing
-
-```bash
-# Run all tests
-flutter test
-
-# Run with coverage
-flutter test --coverage
-
-# View coverage (requires lcov)
-genhtml coverage/lcov.info -o coverage/html
-open coverage/html/index.html
-```
-
 ## 📸 Screenshots
 
 ### Home Screen
