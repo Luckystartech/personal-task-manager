@@ -31,14 +31,14 @@ class TaskDashboardScreen extends StatelessWidget {
       resizeToAvoidBottomInset: true,
       body: SafeArea(
         child: Padding(
-          padding: AppEdgeInsets.symmetric(
+          padding: const AppEdgeInsets.symmetric(
             horizontal: AppGapSize.big,
           ).toEdgeInsets(theme),
           child: Column(
             children: [
-              AppGap.small(),
+              const AppGap.small(),
               const AppTitleHeader(),
-              AppGap.small(),
+              const AppGap.small(),
               const SearchAndFilter(),
               Consumer(
                 builder: (context, ref, _) {
@@ -52,12 +52,12 @@ class TaskDashboardScreen extends StatelessWidget {
                       child: NotificationListener<ScrollNotification>(
                         onNotification: (notification) =>
                             _onScrollNotification(notification, ref),
-                        child: SingleChildScrollView(
+                        child: const SingleChildScrollView(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               // AppGap.big(),
-                              const TodayTasksSection(),
+                              TodayTasksSection(),
                               AppGap.big(),
                             ],
                           ),

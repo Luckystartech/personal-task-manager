@@ -100,26 +100,28 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
     final theme = context.theme;
     return SafeArea(
       child: Padding(
-        padding: AppEdgeInsets.all(AppGapSize.regular).toEdgeInsets(theme),
+        padding: const AppEdgeInsets.all(
+          AppGapSize.regular,
+        ).toEdgeInsets(theme),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                AppText.title3('Filters'),
+                const AppText.title3('Filters'),
                 TextButton(
                   onPressed: _clear,
                   child: const AppText.paragraph2('Clear'),
                 ),
               ],
             ),
-            AppGap.big(),
+            const AppGap.big(),
             // Completion filter
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                AppText.paragraph2('Completion'),
+                const AppText.paragraph2('Completion'),
                 Row(
                   children: [
                     ChoiceChip(
@@ -143,15 +145,15 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
                 ),
               ],
             ),
-            AppGap.big(),
+            const AppGap.big(),
             // Date filter
             Align(
               alignment: Alignment.centerLeft,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  AppText.paragraph2('Date'),
-                  AppGap.small(),
+                  const AppText.paragraph2('Date'),
+                  const AppGap.small(),
                   Wrap(
                     spacing: 8,
                     children: [
@@ -186,12 +188,12 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
                 ],
               ),
             ),
-            AppGap.big(),
+            const AppGap.big(),
             // Sort
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                AppText.paragraph2('Sort'),
+                const AppText.paragraph2('Sort'),
                 Row(
                   children: [
                     ChoiceChip(
@@ -199,7 +201,7 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
                       selected: _newestFirst,
                       onSelected: (_) => setState(() => _newestFirst = true),
                     ),
-                    AppGap.small(),
+                    const AppGap.small(),
                     ChoiceChip(
                       label: const AppText.paragraph2('Oldest'),
                       selected: !_newestFirst,
@@ -209,7 +211,7 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
                 ),
               ],
             ),
-            AppGap.big(),
+            const AppGap.big(),
             Row(
               children: [
                 Expanded(
@@ -218,7 +220,7 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
                     child: const AppText.paragraph2('Cancel'),
                   ),
                 ),
-                AppGap.small(),
+                const AppGap.small(),
                 Expanded(
                   child: ElevatedButton(
                     onPressed: _apply,

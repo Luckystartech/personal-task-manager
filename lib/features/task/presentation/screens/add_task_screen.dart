@@ -122,9 +122,9 @@ class _AddTaskScreenState extends ConsumerState<AddTaskScreen>
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    AppGap.semiSmall(),
+                    const AppGap.semiSmall(),
                     _buildLabel('Title', theme),
-                    AppGap.semiSmall(),
+                    const AppGap.semiSmall(),
                     _buildTextField(
                       controller: _titleController,
                       theme: theme,
@@ -133,9 +133,9 @@ class _AddTaskScreenState extends ConsumerState<AddTaskScreen>
                       hintText: 'Task name...',
                       maxLength: 30,
                     ),
-                    AppGap.semiBig(),
+                    const AppGap.semiBig(),
                     _buildLabel('Description (Optional)', theme),
-                    AppGap.semiSmall(),
+                    const AppGap.semiSmall(),
                     _buildTextField(
                       controller: _descriptionController,
                       theme: theme,
@@ -143,7 +143,7 @@ class _AddTaskScreenState extends ConsumerState<AddTaskScreen>
                       enabled: !state.isLoading,
                       hintText: 'Describe your task...',
                     ),
-                    AppGap.semiBig(),
+                    const AppGap.semiBig(),
                     Row(
                       children: [
                         Expanded(
@@ -164,13 +164,13 @@ class _AddTaskScreenState extends ConsumerState<AddTaskScreen>
                             ],
                           ),
                         ),
-                        AppGap.regular(),
+                        const AppGap.regular(),
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               _buildLabel('Time', theme),
-                              AppGap.small(),
+                              const AppGap.small(),
                               InkWell(
                                 onTap: state.isLoading ? null : _selectTime,
                                 child: _buildDateTimeField(
@@ -185,7 +185,7 @@ class _AddTaskScreenState extends ConsumerState<AddTaskScreen>
                         ),
                       ],
                     ),
-                    AppGap.big(),
+                    const AppGap.big(),
                     SizedBox(
                       width: double.infinity,
                       height: 56,

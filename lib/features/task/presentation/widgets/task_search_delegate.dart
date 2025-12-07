@@ -29,7 +29,9 @@ class TaskSearchDelegate extends SearchDelegate<void> {
       primaryColor: theme.colors.primary,
       scaffoldBackgroundColor:
           theme.colors.background, // 🔥 background of results page
-      inputDecorationTheme: InputDecorationTheme(border: InputBorder.none),
+      inputDecorationTheme: const InputDecorationTheme(
+        border: InputBorder.none,
+      ),
       textTheme: TextTheme(headlineMedium: theme.typography.title1),
       hintColor: theme.colors.primaryOpposite,
       primaryTextTheme: TextTheme(headlineMedium: theme.typography.title1),
@@ -42,7 +44,7 @@ class TaskSearchDelegate extends SearchDelegate<void> {
     final isDarkMode = brightness == Brightness.dark;
 
     return TextStyle(
-      color: isDarkMode ? Color(0xFFfafbfe) : const Color(0xFF22315E),
+      color: isDarkMode ? const Color(0xFFfafbfe) : const Color(0xFF22315E),
     );
   }
 
@@ -70,7 +72,7 @@ class TaskSearchDelegate extends SearchDelegate<void> {
           return const Center(child: CircularProgressIndicator.adaptive());
         }
         if (state.tasks.isEmpty) {
-          return Center(child: AppText.paragraph2('No results'));
+          return const Center(child: AppText.paragraph2('No results'));
         }
         return ListView.separated(
           padding: const EdgeInsets.all(12),

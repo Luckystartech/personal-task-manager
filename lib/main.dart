@@ -14,7 +14,7 @@ class PersonalTaskManagerApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppBase(
+    return const AppBase(
       debugShowCheckedModeBanner: false,
       child: TaskDashboardScreen(),
     );

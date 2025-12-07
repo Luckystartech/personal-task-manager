@@ -26,7 +26,7 @@ class AppThemeData extends Equatable {
     colors: AppColorsData.light(),
     typography: AppTypographyData.regular(),
     spacing: AppSpacingData.regular(),
-    radius: AppRadiusData.regular(),
+    radius: const AppRadiusData.regular(),
     platform: defaultTargetPlatform,
   );
 

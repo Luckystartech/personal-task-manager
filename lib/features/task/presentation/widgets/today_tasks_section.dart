@@ -91,7 +91,7 @@ class _TodayTasksSectionState extends ConsumerState<TodayTasksSection> {
       context: context,
       builder: (context) => AlertDialog.adaptive(
         title: const AppText.title3('Delete All Task?'),
-        content: AppText.paragraph2(
+        content: const AppText.paragraph2(
           'Are you sure you want to delete all task? this action cannot be undone',
         ),
         actions: [
@@ -150,7 +150,7 @@ class _TodayTasksSectionState extends ConsumerState<TodayTasksSection> {
 
               TextButton(
                 onPressed: () => _confirmDeleteAll(context),
-                child: Row(
+                child: const Row(
                   children: [
                     AppText.paragraph2(
                       'Clear All',
@@ -163,7 +163,7 @@ class _TodayTasksSectionState extends ConsumerState<TodayTasksSection> {
               ),
             ],
           ),
-          AppGap.semiBig(),
+          const AppGap.semiBig(),
         ],
 
         if (state.isLoading)
@@ -187,7 +187,7 @@ class _TodayTasksSectionState extends ConsumerState<TodayTasksSection> {
                     size: 48,
                     color: theme.colors.foreground.withAlpha(50),
                   ),
-                  AppGap.regular(),
+                  const AppGap.regular(),
                   Text(
                     state.error!,
                     textAlign: TextAlign.center,
@@ -195,7 +195,7 @@ class _TodayTasksSectionState extends ConsumerState<TodayTasksSection> {
                       color: theme.colors.foreground.withAlpha(70),
                     ),
                   ),
-                  AppGap.regular(),
+                  const AppGap.regular(),
                   ElevatedButton(
                     onPressed: () {
                       ref.read(taskListNotifierProvider.notifier).refresh();
@@ -242,7 +242,7 @@ class _TodayTasksSectionState extends ConsumerState<TodayTasksSection> {
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
             itemCount: state.tasks.length + (state.hasMore ? 1 : 0),
-            separatorBuilder: (context, index) => AppGap.regular(),
+            separatorBuilder: (context, index) => const AppGap.regular(),
             itemBuilder: (context, index) {
               if (index == state.tasks.length) {
                 return Padding(

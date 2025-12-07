@@ -155,7 +155,7 @@ class _TaskSheetState extends ConsumerState<TaskSheet> {
               size: 16,
               color: theme.colors.foreground.withAlpha(200),
             ),
-            AppGap.small(),
+            const AppGap.small(),
             AppText.paragraph2(
               'Task Date: ${_formatDate(task.taskDate)}',
               color: theme.colors.foreground.withAlpha(200),
@@ -172,7 +172,7 @@ class _TaskSheetState extends ConsumerState<TaskSheet> {
               size: 16,
               color: theme.colors.foreground.withAlpha(200),
             ),
-            AppGap.small(),
+            const AppGap.small(),
             AppText.paragraph2(
               'Task Time: ${_formatTime(task.taskTime)}',
               color: theme.colors.foreground.withAlpha(200),

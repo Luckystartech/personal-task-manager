@@ -1,7 +1,7 @@
 import 'package:personal_task_manager/features/task/data/models/task_model.dart';
 import 'package:uuid/uuid.dart';
 
-final uuid = Uuid();
+final uuid = const Uuid();
 
 List<TaskModel> generateDummyTasks() {
   final List<TaskModel> tasks = [];

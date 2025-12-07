@@ -16,7 +16,7 @@ class SearchAndFilter extends ConsumerWidget {
 
     return Container(
       width: double.infinity,
-      padding: AppPadding(
+      padding: const AppPadding(
         padding: AppEdgeInsets.symmetric(vertical: AppGapSize.regular),
       ).padding.toEdgeInsets(theme),
       child: Row(
@@ -38,7 +38,7 @@ class SearchAndFilter extends ConsumerWidget {
                   color: theme
                       .colors
                       .actionBarBackground, // or any background you prefer
-                  borderRadius: AppRadiusData.regular()
+                  borderRadius: const AppRadiusData.regular()
                       .asBorderRadius()
                       .regular,
                   boxShadow: [
